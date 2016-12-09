@@ -1,0 +1,45 @@
+<!--
+  Generated template for the Cadastro page.
+
+  See http://ionicframework.com/docs/v2/components/#navigation for more info on
+  Ionic pages and navigation.
+-->
+<ion-header>
+
+  <ion-navbar>
+    <ion-title>cadastro</ion-title>
+  </ion-navbar>
+
+</ion-header>
+
+
+<ion-content padding>
+  <ion-item>
+     <ion-label fixed>Nome</ion-label>
+     <ion-input type="text" [(ngModel)]="usuario.nome"></ion-input>
+   </ion-item>
+
+   <ion-item>
+      <ion-label fixed>Email</ion-label>
+      <ion-input type="email" [(ngModel)]="usuario.email"></ion-input>
+    </ion-item>
+
+  <ion-item>
+     <ion-label fixed>Aniv</ion-label>
+     <ion-input type="date" [(ngModel)]="usuario.aniversario"></ion-input>
+   </ion-item>
+
+   <ion-item>
+      <ion-label fixed>Senha</ion-label>
+      <ion-input type="text" [(ngModel)]="usuario.senha"></ion-input>
+    </ion-item>
+
+  <ion-item>
+     <ion-label fixed>CPF</ion-label>
+     <ion-input type="text" [(ngModel)]="usuario.cpf"></ion-input>
+   </ion-item>
+
+<div padding>
+  <button ion-button color="secondary" outline round block (click)="inserir()">Salvar</button>
+</div>
+</ion-content>

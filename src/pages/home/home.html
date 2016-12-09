@@ -1,0 +1,26 @@
+<ion-header>
+  <ion-navbar>
+    <ion-title>
+      Ionic Blank
+    </ion-title>
+  </ion-navbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+
+   <ion-item>
+     <ion-label fixed>E-mail</ion-label>
+     <ion-input type="email" [(ngModel)]="usuario.email"></ion-input>
+   </ion-item>
+
+   <ion-item>
+     <ion-label fixed>Senha</ion-label>
+     <ion-input type="password" [(ngModel)]="usuario.senha"></ion-input>
+   </ion-item>
+   <ion-item>
+     <button ion-button color="secondary" outline round block (click)="cadastrar()">Chamar Cadastro</button>
+  </ion-item>
+ </ion-list>
+
+</ion-content>
